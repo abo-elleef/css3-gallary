@@ -111,4 +111,18 @@ article:target img{
   border-radius: 50%;
   background: #111;
   color: #ccc;
-};
+}
+.title,.subTitle{
+    text-align: center;
+    color: #666;
+
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-top: 3%;
+}
+.subTitle{
+    margin: 1% auto 10% auto ;
+    display: block;
+    text-align: center;
+
+}
