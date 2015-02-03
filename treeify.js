@@ -39,11 +39,11 @@ function toggleChildren(e){
     arrow_class = e.data.arrow_class;
     if ($(this).parent().next().hasClass("expanded")){
 
-        $(this).parent().next().removeClass("expanded").addClass("collapsed");
+        $(this).parent().next().removeClass("expanded").addClass("collapsed").hide(500);
         $(this).removeClass('arrow-down').addClass(arrow_class);
     }else{
         if ($(this).parent().next().hasClass("collapsed")){
-            $(this).parent().next().removeClass("collapsed").addClass("expanded");
+            $(this).parent().next().removeClass("collapsed").addClass("expanded").show(500);
             $(this).removeClass(arrow_class).addClass("arrow-down");
             var children = $(this).parent().next().find('ul').first().children('li.child');
             for(i = 0; i < children.length;i++){
@@ -86,7 +86,7 @@ function getDirection(options){
             for (var i = 0; i < 15; i++) {
                 parents = add_sub_level(parents, listMembers, arrow_class);
             };
-
+            $(".collapsed").hide();
         };
     }(jQuery)
 );
