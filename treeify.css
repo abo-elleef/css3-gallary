@@ -1,0 +1,102 @@
+.treeifiedList{
+  margin-top: 20px;
+  list-style-type: none;
+}
+.children{
+  list-style-type: none;
+}
+
+.treeifiedList li{
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+.treeifiedList li.root,.treeifiedList li.child{
+  height: 30px;
+}
+
+.treeifiedList li a.level-name,
+.treeifiedList li a.group-name,
+.treeifiedList li a.subject-name,
+.treeifiedList li a.topic-name{
+  position: absolute;
+  top: 4px;
+}
+.add_Courses,.add_Groups,.add_students{
+  margin-top: 5px;
+  /*color: #000 !important;*/
+  background:#0fa083;
+  border: 1px solid #0fa083;
+
+}
+.treeifiedList li.root{
+  background: rgba(255,255,255,.1);
+}
+.treeifiedList li.child{
+
+  background: rgba(0,0,0,.3);
+}
+
+.treeifiedList li div.level-action{
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/* minimum style to make it work*/
+.treeifiedList li.expanded{
+  display: block;
+}
+.treeifiedList a{
+  /*color: white; */
+  outline: 0;
+}
+
+.treeifiedList li.collapsed {
+  display: none;
+}
+
+a.arrow-right {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;  /* left arrow slant */
+  border-top: 10px solid transparent; /* right arrow slant */
+  border-left: 10px solid #000; /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+a.arrow-left {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;  /* left arrow slant */
+  border-top: 10px solid transparent; /* right arrow slant */
+  border-right: 10px solid #000; /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+a.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #777;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+}
+
+a.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #777;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 10px;
+}
