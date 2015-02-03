@@ -70,6 +70,7 @@ a.arrow-right {
   line-height: 0;
   margin-right: 10px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 a.arrow-left {
@@ -82,6 +83,7 @@ a.arrow-left {
   line-height: 0;
   margin-right: 10px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 a.arrow-down {
@@ -93,6 +95,7 @@ a.arrow-down {
   font-size: 0;
   line-height: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 a.arrow-up {
@@ -104,4 +107,5 @@ a.arrow-up {
   font-size: 0;
   line-height: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
