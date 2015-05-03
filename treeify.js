@@ -90,14 +90,3 @@ function getDirection(options){
         };
     }(jQuery)
 );
-
-
-
-
-
-// to do list
-// 1- fix repeated item errors (done)
-// 2- remove all global variable (done)
-// 3- make as general as possible (done)
-// 4- make it customizable (single or multi, colors, ids and classes (done with separate  style file)
-// 5- push it to github (pending)
