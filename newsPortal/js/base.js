@@ -62,7 +62,7 @@ var progress = function(){
       $(".determinate").css("width",progressString);
       progressState = (100 * counter)%100;
       counter += 0.01;
-      console.log(progressString)
+
   },progressTime);
 };
 var activateSlider = function(){
