@@ -61,10 +61,10 @@ body{
 		margin-left: 100px;
 	}
 .away.after{
-	margin-right: 8px;
+	margin-right: 11px;
 }
 .away.before{
-	margin-left: 8px;
+	margin-left: 11px;
 }
 #fourthRow .overflow {
 	overflow: hidden;
@@ -87,10 +87,9 @@ body{
 }
 #seventhRow .after{
 	position: absolute;
-  	height: 45px;
-  	width: 1px;
-  	top: -5px;
-  	left: 30px;
+	height: 43px;
+	top: -4px;
+	left: 30px;
 }
 #seventhRow .go-right .row:first-child{	height: 0.19in !important;}
 #seventhRow .go-right {height: 2.9in !important;}
