@@ -163,6 +163,13 @@ var footerActivator = function(){
   active.removeClass("shown");
   next.addClass("shown");
 };
+var animateCardClass = function(){
+  $(".card").hover(function(){
+    $(this).addClass("z-depth-2").addClass("bigger");
+  },function(){
+    $(this).removeClass("z-depth-2").removeClass("bigger");
+  });
+};
 $(document).ready(function(){
   $(".button-collapse").sideNav();
   $('.pushpin').pushpin({ top: "100px" });
@@ -176,6 +183,7 @@ $(document).ready(function(){
     e.preventDefault();
     $("#mapContainer").show(500);
   });
+  animateCardClass();
   // ready actions for images archive
 
   $('.gallary').on('click',dismissGallaryMode);

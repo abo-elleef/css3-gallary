@@ -7,3 +7,10 @@
 	top: 0px;
 	overflow: scroll;
 }
+.margin-zero{
+  margin-top: 0px !important;
+}
+.bigger{
+	transform: scale(1.06);
+	transition: 0.5s;
+}
