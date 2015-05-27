@@ -268,6 +268,23 @@ footer{
   background-color: #B6B6B6 !important;
 }
 
+.stackLayer{
+  height: 500px;
+  width: 90%;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  overflow: scroll;
+}
+.margin-zero{
+  margin-top: 0px !important;
+}
+.bigger{
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+
+
 .high{
   border: 2px solid red;
 }
