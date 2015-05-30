@@ -1,0 +1,38 @@
+.limited{
+	max-height: 350px;
+	overflow: hidden;
+}
+.no-margin{
+	margin: 0px;
+}
+.nav-wrapper{
+	padding-left: 10px;
+}
+.action{
+	width: 80px !important;
+	height: 80px !important;
+	line-height: 80px !important;
+}
+.home-action{
+	width: 250px;
+}
+.welcome-text{
+	margin-top: 200px;
+	font-size: 18px;
+
+}
+.project-name{
+	font-size: 36px;
+	margin: 30px auto;
+	font-weight: bold;
+}
+.project-promo{
+	font-size: 18px;
+}
+.more-info{
+	margin-top: 100px;
+}
+body{
+	background-color: #ededed;
+	color: #333;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>liama test</title>
+	<link rel="stylesheet" type="text/css" href="./css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.js"></script>
+</head>
+<body>
+	<nav class="light-blue lighten-1" role="navigation">
+	  <div class="nav-wrapper "><a id="logo-container" href="#" class="brand-logo header-logo">liama test</a>
+	    <ul class="right hide-on-med-and-down">
+	      <li><a href="#">Sign in</a></li>
+	    </ul>
+
+	    <ul id="nav-mobile" class="side-nav">
+	      <li><a href="#">Sign in</a></li>
+	    </ul>
+	    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	  </div>
+	</nav>
+	<div class="row center">
+      <div class="card no-margin">
+        <div class="card-image limited">
+          <img src="./img/8.jpg">
+        </div>
+        <div class="card-content">
+          <p> Project title will go here</p>
+        </div>
+        <div class="card-action">
+         a desc paragraph will go here and it should be limited by 140 char.
+        </div>
+      </div>
+	</div>
+	<div class="row actions-row">
+		<div class="col s12 l4 offset-l4 center">
+			<a href="#!" class="btn-floating btn-large waves-effect waves-light blue left action ">like</a>
+			<a href="#!" class="btn-floating btn-large waves-effect waves-light blue right action">dislike</a>
+			<a href="#!" class="more-info">More info</a>
+		</div>
+	</div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+		    	$('.button-collapse').sideNav();
+			})
+		</script>
+</body>
+</html>
