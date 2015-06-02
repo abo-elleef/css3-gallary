@@ -76,3 +76,11 @@ label{
 	#side-bar li:hover a{
 		color: #212121;
 	}
+
+.col.article-img{
+	padding: 0px !important;
+	margin: 15px !important;
+}
+.project-details{
+	text-align: left;
+}
