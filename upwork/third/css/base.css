@@ -58,6 +58,13 @@ label{
 	line-height: 65px;
 	color: white;
 }
+#searchContainer{	
+ transition: 0.5s;
+}
+#search-llama:focus{
+ color: #eee;
+ font-size: 21px;
+}
 #side-bar li {
 	width: 100%;
 	padding: 10px;
@@ -84,3 +91,32 @@ label{
 .project-details{
 	text-align: left;
 }
+.input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input:focus + label {
+     color: #64B5F6 !important;
+   }
+   /* label underline focus color */
+   .input-field input:focus {
+     border-bottom: 1px solid #64B5F6 !important;
+     box-shadow: 0 1px 0 0 #64B5F6 !important;
+   }
+   /* valid color */
+   .input-field input.valid {
+     border-bottom: 1px solid #64B5F6 !important;
+     box-shadow: 0 1px 0 0 #64B5F6 !important;
+   }
+   /* invalid color */
+   .input-field input.invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   .input-field input.invalid + label {
+   		color: red;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #64B5F6 !important;
+   }
