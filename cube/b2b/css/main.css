@@ -8,6 +8,7 @@ Author URL: http://shapebootstrap.net
 /*************************
 *******Typography******
 **************************/
+
 body {
   padding-top: 100px;
   background: #fff;
@@ -938,4 +939,11 @@ ul.nostyle i {
 }
 .navbar-brand.b2b{
   padding: 0px !important;
+}
+@font-face {
+    font-family: flat;
+    src: url(../fonts/JF Flat regular.ttf);
+}
+* {
+    font-family: flat;
 }

@@ -2,3 +2,16 @@
 .navbar-brand.b2b{
   padding: 10px !important;
 }
+@font-face {
+    font-family: flat;
+    src: url('../fonts/JF Flat regular.ttf');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+    font-family: flat !important;
+}
