@@ -126,13 +126,44 @@
 				</div>
 			</div>
 			<div id="filter" class="fixed-action-btn" style="top: 0px; right: 20px;">
-		    <a class="btn-floating btn-large red">
-		      <i class="large mdi-editor-mode-edit"></i>
-		    </a>
-		    <div class="filterOptions">
-		    	
+			    <a class="btn-floating btn-large light-blue lighten-1">
+			      <i class="large mdi-editor-mode-edit"></i>
+			    </a>
+			</div>
+		    <div id="filterOptions" class="light-blue lighten-1">
+		    	<div class="row white-text">
+		    		<div class="col s12">
+		    			<p class="filter-title">
+		    				Category
+		    			</p>
+		    			<ul>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">Technology</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text ">small Business</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text ">Design</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text ">Food</a></li>
+		    			</ul>
+		    		</div>
+		    		<div class="col s12">
+		    			<p class="filter-title">
+		    				Type
+		    			</p>
+		    			<ul>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">New Start</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">Production</a></li>
+		    			</ul>
+		    		</div>
+		    		<div class="col s12">
+		    			<p class="filter-title">
+		    				Feeder Options
+		    			</p>
+		    			<ul>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">New Trending</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">New</a></li>
+		    				<li class="col s10 m4 l4 offset-s1 offset-m1 offset-l1"><a href="" class="white-text">Leader Board</a></li>
+		    			</ul>
+		    		</div>
+		    	</div>
 		    </div>
-		  </div>
 
 		</div>
 	</div>
@@ -149,7 +180,9 @@
 				$(this).parent().parent().parent().removeClass("blue").removeClass("darken-3");
 			});
 			$("#filter").click(function(){
-				alert("wide screen should be open with bold color with filter options ");
+				var width = $(window).width();
+				var height = $(window).height();
+				$("#filterOptions").addClass("fadeIn").width(width *0.7).height(height *0.8);
 			});
 		})
 
