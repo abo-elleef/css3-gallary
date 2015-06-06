@@ -127,7 +127,7 @@ label{
 	width: 0;
 	height: 0;
 	opacity: 0;
-	z-index: 1000;
+	z-index: 1100;
 
 }
 .fadeIn{
@@ -147,4 +147,21 @@ label{
 	font-size: 18px;
 	margin-top: 10px;
 	text-transform: capitalize;
+}
+#dummyLayer{
+	z-index: 1100;
+	position: fixed;
+	width: 100%;
+	height: 0;
+	background-color: #0f0;
+	opacity: 0.7;
+	top: 50%;
+}
+#dummyLayer.dummyFadeIn{
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: 0.5s;
 }
