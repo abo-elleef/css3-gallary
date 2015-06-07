@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>llamatest</title>
+	<link rel="stylesheet" type="text/css" href="./css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.js"></script>
+</head>
+<body>
+	<nav class="light-blue lighten-1 hide-on-large-only" role="navigation">
+		<div class="nav-wrapper "><a id="logo-container" href="#" class="brand-logo header-logo">llamatest</a>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		</div>
+		<ul id="nav-mobile" class="side-nav">
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./project.html">Project Feed</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./signin.html">Sign In</a></li>
+		</ul>
+	</nav>
+	<div class="row ">
+		<div  class="col l2 m2 z-depth-1 side-bar hide-on-med-and-down">
+			<div class="row center">
+				<h3 class="large-logo light-blue lighten-1 no-margin">llamatest</h3>
+			</div>
+			<ul id="side-bar" class="">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./project.html">Project Feed</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./signin.html">Sign In</a></li>
+			</ul>
+		</div>
+		<div class="col offset-l2 l10 m12">
+			<form class="card">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="project_name" type="text" class="validate">
+	          <label for="project_name">Project Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="project_name" type="file" class="validate">
+	          <label for="project_name">Main Image</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <textarea id="project_description" class="validate">  </textarea>
+	          <label for="project_description">Main Image</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="project_details" type="text" class="validate">
+	          <label for="project_details">Project Details</label>
+	        </div>
+	      </div>
+	    </form>
+		</div>
+	</div>
+
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+
+	</script>
+</body>
+</html>
