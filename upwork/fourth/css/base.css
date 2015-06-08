@@ -40,6 +40,17 @@
 .pagination li a{
 	color: #5a2d82;
 }
+#home-icon{
+}
+.svg-icon{
+	overflow: hidden;
+	height: 100%;
+	width: 60px;
+	padding-left: 20px;
+	padding-top: 5px;
+	border-right: 1px dotted white;
+
+}
 
 /* home */
 .header img{
