@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>llamatest</title>
+	<link rel="stylesheet" type="text/css" href="./css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="./css/material-box.css">
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+	
+	<header>
+		
+	</header>
+	<div class="row">
+		<div class="col s10 offset-s1">
+			<div class="row center">
+				<p class="main-text green-text text-darken-4">click on any box</p>
+			</div>
+			<div class="row">
+				<div class=" center relative">
+					<div class="box blue darken-4">
+						<span class="white-text color-name"> dark blue</span>
+					</div>
+					<div class="box-details">
+						<p>content of dark blue box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box blue darken-2">
+						<span class="white-text color-name"> noraml blue</span>
+					</div>
+					<div class="box-details">
+						<p>content of normal blue box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box light-blue lighten-2">
+						<span class="white-text color-name"> light blue</span>
+					</div>
+					<div class="box-details">
+						<p>content of light blue box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box light-blue lighten-4">
+						<span class="white-text color-name"> very light blue</span>
+					</div>
+					<div class="box-details">
+						<p>content of very light blue box</p>
+					</div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class=" center relative">
+					<div class="box green darken-4">
+						<span class="white-text color-name"> dark green</span>
+					</div>
+					<div class="box-details">
+						<p>content of dark green box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box green darken-2">
+						<span class="white-text color-name"> normal green</span>
+					</div>
+					<div class="box-details">
+						<p>content of normal green box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box green lighten-2">
+						<span class="white-text color-name"> light green</span>
+					</div>
+					<div class="box-details">
+						<p>content of light green box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box green lighten-4">
+						<span class="white-text color-name"> very light green</span>
+					</div>
+					<div class="box-details">
+						<p>content of very light green box</p>
+					</div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class=" center relative">
+					<div class="box orange darken-4">
+						<span class="white-text color-name"> dark orange</span>
+					</div>
+					<div class="box-details">
+						<p>content of dark orange box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box orange darken-2">
+						<span class="white-text color-name"> normal orange</span>
+					</div>
+					<div class="box-details">
+						<p>content of normal orange box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box orange lighten-2">
+						<span class="white-text color-name"> light orange</span>
+					</div>
+					<div class="box-details">
+						<p>content of light orange box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box orange lighten-4">
+						<span class="white-text color-name"> very light orange</span>
+					</div>
+					<div class="box-details">
+						<p>content of very light orange box</p>
+					</div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class=" center relative">
+					<div class="box purple darken-4">
+						<span class="white-text color-name"> dark purple</span>
+					</div>
+					<div class="box-details">
+						<p>content of dark purple box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box purple darken-2">
+						<span class="white-text color-name"> normal purple</span>
+					</div>
+					<div class="box-details">
+						<p>content of normal purple box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box purple lighten-2">
+						<span class="white-text color-name"> light purple</span>
+					</div>
+					<div class="box-details">
+						<p>content of light purple box</p>
+					</div>
+				</div>
+				<div class=" center relative">
+					<div class="box purple lighten-4">
+						<span class="white-text color-name"> very light purple</span>
+					</div>
+					<div class="box-details">
+						<p>content of very light purple box</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="material-bg">
+		<div class="controls">
+			<a id="close-hero" class="btn right">close</a>
+		</div>
+		<div class="details">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var width = $(window).width()/3;
+			$(".box").css("width", width);
+			$(".box").click(function(e){
+				$(this).addClass("centerlize");
+				var that  = this;
+				setTimeout(function(){
+					$(that).addClass("expand");
+					// $(that).css("")
+				},500)
+			});
+		});
+	</script>
+
+</body>
+</html>
+
+
