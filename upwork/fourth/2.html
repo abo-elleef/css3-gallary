@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="./js/base.js"></script>
 </head>
 <body>
-<ul id="drop-list">
+	<ul id="drop-list">
 		<li class="burble text-center"><a href="#" class=" white-text">Pesos</a></li>
 		<li class="burble text-center"><a href="#" class=" white-text">Estratégias Combinadas</a></li>
 		<li class="burble text-center"><a href="#" class=" white-text">Estratégias x SKU</a></li>
@@ -43,8 +43,7 @@
 			<img class="pull-left " src="./images/logo.png" />
 			<p class="pull-left product-name">Índice Netshoes <br>
 				Simulador</p>
-			<a href="#" class="pull-right btn btn-logo white burble-text">Loja Netshoes</a>
-				
+			<a href="#" class="pull-right btn btn-logo white burble-text">Loja Netshoes</a>				
 		</div>
 		<div class="row">
 			<ol class="breadcrumb gray">
@@ -54,164 +53,173 @@
 			  
 			</ol>
 		</div>
-		<div class="row white main-part">
-			<h3>Estratégias Combinadas</h3>		
-			<p class="estrategy-desc">Criar estratégias para incrementar ou reduzir o valor índice de alguns produtos, de acordo com as metas ou campanhas vigentes. </p>
+		<div class="row white main-part ">
+			<h3>Alterar ou Visualizar Pesos</h3>		
+			<p class="estrategy-desc">Alterar os pesos individuais dos 12 indicadores que compõe o índice de acordo com a meta a ser atingida.  </p>
+			<p class="estrategy-desc">A alteração pode ser feita por departamento.  </p>
 			<hr />
 			<div class="">
-				<form class="form-horizontal">
-				 <div class="normal-gray form-container normal-padding">
-				  <div class="form-group">
-				    <label for="inputEmail3" class="col-sm-3 control-label">Name</label>
-				    <div class="col-sm-5">
-				      <input type="email" class="form-control" id="inputEmail3" >
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Status</label>
-				    <div class="col-sm-5">
-				      <div class="radio">
-							  <label>
-							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-							    	Ativo
-							  </label>
-							</div>
-						</div>
-						<div class="col-sm-5 col-sm-offset-3">
-				      <div class="radio">
-							  <label>
-							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-							    	inativo
-							  </label>
-							</div>
-					  </div>
+				<div id="upper-part" class="normal-gray form-container normal-padding col-xs-6 clear-both">
+					<h3>Departamento</h3>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+					    	Aplicar a todos departamentos
+
+					  	</label>
 					</div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Produtos com desconto %:</label>
-				    <div class="col-sm-9">
-				    	<span class="col-sm-1 text-center">De</span> <input type="text" class="col-sm-1" /> <span class="col-sm-1 text-center">a</span> <input type="text" class="col-sm-1">
-			        <label class="col-sm-offset-1">
-			          <input type="checkbox"> Todos
-			        </label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Lançamento:</label>
-				    <div class="col-sm-5">
-			          <input type="checkbox">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Aposta:</label>
-				    <div class="col-sm-5">
-			          <select class="form-control">
-			          	<option>A</option>
-			          	<option>B</option>
-			          	<option>C</option>
-			          	<option>Todos</option>
-			          </select>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Cobertura:</label>
-				    <div class="col-sm-5">
-			          <select class="form-control">
-			          	<option>A</option>
-			          	<option>B</option>
-			          	<option>C</option>
-			          	<option>Todos</option>
-			          </select>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Departamento:</label>
-				    <div class="col-sm-5">
-			          <label>
-							    <input type="checkbox" value="">
-							    selecionar todos departamentos
-							  </label>
-							  <select class="form-control" multiple>
+					<div class="">
+			      <div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+						    	Aplicar ao departamento
+						  </label>
+								<select class="form-control col-xs-offset-1">
 							  	<option>Artes Marciais</option>
 							  	<option>Automobilismo</option>
 							  	<option>Aventura</option>
 							  	<option>Basquete</option>
 							  	<option>Bike</option>
 							  	<option>Casual</option>
-							  	
+							  	<option>Eletrônicos</option>
 							  </select>
-				    </div>
+						</div>
 				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Produto:</label>
-				    <div class="col-sm-5">
-			          <label>
-							    <input type="checkbox" value="">
-							    selecionar todos produtos
-							  </label>
-							  <select class="form-control" multiple>
-							  	<option>Bermudas</option>
-							  	<option>Bonés</option>
-							  	<option>Calças</option>
-							  	<option>Camisas Polo</option>
-							  	<option>Camisetas</option>
-							  	<option>Colecionávies</option>
-							  </select>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Marca:</label>
-				    <div class="col-sm-5">
-			        <label class="">
-			          <input type="checkbox"> selecionar todas marcas
-			        </label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Gênero:</label>
-				    <div class="col-sm-5">
-			        <label class="">
-			          <input type="checkbox"> selecionar todos gêneros
-			        </label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Clube:</label>
-				    <div class="col-sm-5">
-			        <label class="">
-			          <input type="checkbox"> selecionar todos clubes
-			        </label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Time:</label>
-				    <div class="col-sm-5">
-			        <label class="">
-			          <input type="checkbox"> selecionar todos times
-			        </label>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Força:</label>
-				    <div class="col-sm-5">
-			          <select class="form-control">
-			          	<option>Selecione uma força</option>
-			          	<option>Agressiva Positiva</option>
-			          	<option>Moderada Positiva</option>
-			          	<option>Sutil Positiva</option>
-			          	<option>Moderada Negativa</option>
-			          	<option>Agressiva Negativa</option>
-			          </select>
-				    </div>
-				  </div>
-				 </div>
-				  <div class="form-group">
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn burble col-xs-3 pull-right submit-button white-text">Salvar</button>
-				    </div>
-				  </div>
-				</form>
-			</div>	
+				</div>
+			  <div class="clearfix"></div>
+			 <div class="normal-gray form-container normal-padding">
+			  <h3>Pilares</h3>
+			  <table class="table table-bordered table-striped">
+			  	<thead>
+			  		<colgroup>
+				  		<col width="70%"></col>
+				  		<col width="30%"></col>
+				  	</colgroup>
+				  	<tr class="burble">
+				  		<th class="text-center white-text">Popularidade</th>
+				  		<th class="text-center white-text">45</th>
+				  	</tr>
+			  	</thead>
+			  	<tbody class="text-center">
+			  	
+			  		<tr>
+			  			<td>Faturamento</td>
+			  			<td>11</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Venda</td>
+			  			<td>13</td>
+			  		</tr>			 
+			  		<tr>
+			  			<td>Visualização</td>
+			  			<td>9</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Conversão</td>
+			  			<td>6</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Recência</td>
+			  			<td>6</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+			  <table class="table table-bordered table-striped">
+			  	<thead>
+			  	<colgroup>
+			  		<col width="70%"></col>
+			  		<col width="30%"></col>
+			  	</colgroup>
+				  	<tr class="burble">
+				  		<th class="text-center white-text">Competitividade</th>
+				  		<th class="text-center white-text">20</th>
+				  	</tr>
+			  	</thead>
+			  	<tbody class="text-center">
+			  		<tr>
+			  			<td>Desposicionado</td>
+			  			<td>7</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Posição</td>
+			  			<td>7</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Desconto</td>
+			  			<td>5</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Exclusivo</td>
+			  			<td>1</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+			  <table class="table table-bordered table-striped">
+			  	<thead>
+			  	<colgroup>
+			  		<col width="70%"></col>
+			  		<col width="30%"></col>
+			  	</colgroup>
+				  	<tr class="burble">
+				  		<th class="text-center white-text">Cobertura</th>
+				  		<th class="text-center white-text">25</th>
+				  	</tr>
+			  	</thead>
+			  	<tbody class="text-center">
+			  		<tr>
+			  			<td>Grade</td>
+			  			<td>15</td>
+			  		</tr>
+			  		<tr>
+			  			<td>Cobertura</td>
+			  			<td>10</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+			  <table class="table table-bordered table-striped">
+			  	<thead>
+			  	<colgroup>
+			  		<col width="70%"></col>
+			  		<col width="30%"></col>
+			  	</colgroup>
+				  	<tr class="burble">
+				  		<th class="text-center white-text">Financeiro</th>
+				  		<th class="text-center white-text">10</th>
+				  	</tr>
+			  	</thead>
+			  	<tbody class="text-center">
+			  		<tr>
+			  			<td>Margem</td>
+			  			<td>10</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+			  <table id="total" class="table ">
+				  <thead>
+				  	<colgroup>
+				  		<col width="50%"></col>
+				  		<col width="25%"></col>
+				  		<col width="25%"></col>
+				  	</colgroup>
+				  </thead>
+				  <tbody class="text-center">
+				  	<tr>
+				  		<td></td>
+				  		<td id="total-string" >Total pilares :</td>
+				  		<td id="total-number">100
+				  		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="100%" height="100%" xml:space="preserve"><g class="shape" style="-webkit-transform: scale(1.0833333333333, 1.125);-moz-transform: scale(1.0833333333333, 1.125);transform: scale(1.0833333333333, 1.125);"><defs></defs><rect fill="#37a447" display="none" width="24" height="24"></rect><rect fill="#37a447" id="_x3C_Slice_x3E__109_" display="none" width="24" height="24"></rect><polygon fill="#37a447" fill-rule="evenodd" clip-rule="evenodd" points="20.5,2 9.5,16.5 3,10 0,13 10,23 24,5 "></polygon></g></svg>
+				  		</td>
+				  	</tr>
+				  </tbody>
+			  </table>
+			</div>
 		</div>
+	  <div class="">
+	    <div class="">
+	      <a  class="btn burble col-xs-2  pull-right submit-button white-text">Definir pilares</a>
+	      <a id="Definir-button" class="btn burble col-xs-2  pull-right submit-button white-text">Definir padrão</a>
+	    </div>
+	  </div>
 
 	</div>
 </body>
