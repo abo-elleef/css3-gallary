@@ -4,6 +4,14 @@
 	<title>llamatest</title>
 	<link rel="stylesheet" type="text/css" href="./css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="./css/base.css">
+
+
+	<link rel="stylesheet" href="./bower_components/medium-editor/dist/css/medium-editor.min.css">
+	<link rel="stylesheet" href="./bower_components/medium-editor/dist/css/themes/default.css" id="medium-editor-theme">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/medium-editor-insert-plugin.min.css">
+
+
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="./js/materialize.js"></script>
 </head>
@@ -32,42 +40,81 @@
 			</ul>
 		</div>
 		<div class="col offset-l2 l10 m12">
-			<form class="card">
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <input id="project_name" type="text" class="validate">
-	          <label for="project_name">Project Name</label>
+			<form class="">
+		      <div class="row center">
+		      	<img id="placeholder-image" class="img-responsive z-depth-1" src="./img/placeholder.jpg">
+		      </div>
+		      <div class="row">
+		      	<div class="file-field input-field col s12 m8 offset-m2">
+				      <input class="file-path validate" type="text"/>
+				      <div class="btn light-blue lighten-1">
+				        <span>File</span>
+				        <input id="mainImageInput" type="file" />
+				      </div>
+				    </div>
+		      </div>
+		      <div class="row">
+		        <div class="input-field col s12 m8 offset-m2">
+		          <input id="project-name" type="text" class="validate">
+		          <label for="project-name">Project Name</label>
+		        </div>
+		      </div>
+		      <div class="row">
+	          <div class="input-field col s12 m8 offset-m2">
+	            <textarea id="project-desc" class="materialize-textarea" length="140"></textarea>
+	            <label for="project-desc">Textarea</label>
+	          </div>
 	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <input id="project_name" type="file" class="validate">
-	          <label for="project_name">Main Image</label>
+	        <div class="row">
+	        	<textarea class=" col s10 offset-s1 editable" id="project-details" data-placeholder="Tell The Crowd About Your Dream"></textarea>
 	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <textarea id="project_description" class="validate">  </textarea>
-	          <label for="project_description">Main Image</label>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <input id="project_details" type="text" class="validate">
-	          <label for="project_details">Project Details</label>
-	        </div>
-	      </div>
-	    </form>
+		    </form>
 		</div>
 	</div>
+    	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="./bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+    <script src="./bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+    <script src="./bower_components/medium-editor/dist/js/medium-editor.js"></script>
+    <script src="./bower_components/handlebars/handlebars.runtime.min.js"></script>
+    <script src="./bower_components/jquery-sortable/source/js/jquery-sortable-min.js"></script>
 
-	
+    <script src="./bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+    <script src="./bower_components/jquery-cycle2/build/plugin/jquery.cycle2.center.min.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.button-collapse').sideNav();
-		});
+    <!--<script src="./dist/js/medium-editor-insert-plugin.min.js"></script>-->
+    <script src="./src/js/templates.js"></script>
+    <script src="./src/js/core.js"></script>
+    <script src="./src/js/embeds.js"></script>
+    <script src="./src/js/images.js"></script>
 
-	</script>
+    <script>
+        var editor = new MediumEditor('.editable', {
+            buttonLabels: 'fontawesome'
+        });
+
+        $(function () {
+            $('.editable').mediumInsert({
+                editor: editor
+            });
+        });
+        function onFileSelected(event) {
+				  var selectedFile = event.target.files[0];
+				  var reader = new FileReader();
+
+				  var imgtag = document.getElementById("placeholder-image");
+				  imgtag.title = selectedFile.name;
+
+				  reader.onload = function(event) {
+				    imgtag.src = event.target.result;
+				  };
+
+				  reader.readAsDataURL(selectedFile);
+				};
+				$("#mainImageInput").change(function(e){
+					onFileSelected(e)
+				});
+
+     </script>
 </body>
 </html>

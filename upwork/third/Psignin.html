@@ -29,13 +29,13 @@
 	      	<input type="text" placeholder="first name" class="z-depth-1 light-blue-text" />
 	      	<input type="text" placeholder="last name" class="z-depth-1 light-blue-text" />
 	      	<input type="email" placeholder="Email" class="z-depth-1 light-blue-text" />
-	      	<select>
-	      		<option>Select Country</option>
-	      		<option>Egypt</option>
-	      		<option>USA</option>
-	      		<option>England</option>
-	      		<option>France</option>
-	      	</select>
+				    <select>
+				      <option value="" disabled selected>Choose your option</option>
+		      		<option>Egypt</option>
+		      		<option>USA</option>
+		      		<option>England</option>
+		      		<option>France</option>
+				    </select>
 	      	<input type="text" placeholder="Username" class="z-depth-1 light-blue-text" />
 	      	<input type="password" placeholder="Password" class="z-depth-1 light-blue-text" />
 	      </div>
@@ -44,7 +44,7 @@
 		      <label for="subscribe">Yes, sign me up for that llamatest newsletter!</label>
 		    </p>
 		    <div class="col s6 offset-s3 center">
-		    	<a href="#" class="btn blue">Start</a>
+		    	<a href="./createProject.html" class="btn blue">Start</a>
 		    </div>
       </form>
 	</div>
@@ -53,8 +53,9 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-	    	$('.button-collapse').sideNav();
-		})
+  	  $('select').material_select();
+	  });
+
 	</script>
 </body>
 </html>

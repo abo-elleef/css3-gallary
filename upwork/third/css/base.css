@@ -95,25 +95,25 @@ label{
      color: #000;
    }
    /* label focus color */
-   .input-field input:focus + label {
+   .input-field input:focus + label ,.input-field textarea:focus + label {
      color: #64B5F6 !important;
    }
    /* label underline focus color */
-   .input-field input:focus {
+   .input-field input:focus,.input-field textarea:focus {
      border-bottom: 1px solid #64B5F6 !important;
      box-shadow: 0 1px 0 0 #64B5F6 !important;
    }
    /* valid color */
-   .input-field input.valid {
+   .input-field input.valid, .input-field textarea.valid {
      border-bottom: 1px solid #64B5F6 !important;
      box-shadow: 0 1px 0 0 #64B5F6 !important;
    }
    /* invalid color */
-   .input-field input.invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
+   .input-field input.invalid, .input-field textarea.invalid {
+     border-bottom: 1px solid #F44336 !important;
+     box-shadow: 0 1px 0 0 #F44336 !important;
    }
-   .input-field input.invalid + label {
+   .input-field input.invalid + label, .input-field textarea.invalid + label {
    		color: red;
    }
    /* icon prefix focus color */
@@ -165,3 +165,8 @@ label{
 	opacity: 1;
 	transition: 0.5s;
 }
+
+#placeholder-image{
+	max-height: 300px;
+}
+
