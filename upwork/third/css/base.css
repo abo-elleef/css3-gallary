@@ -170,3 +170,17 @@ label{
 	max-height: 300px;
 }
 
+#project-details{
+	min-height: 400px !important;
+}
+#success-text{
+	padding: 20px 15px;
+	margin-top:  200px;	
+	font-size: 18px;
+	text-transform: capitalize;
+	font-size: 24px;
+	font-weight: bold;
+}
+#success-actions{
+	margin-top: 100px;
+}
