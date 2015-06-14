@@ -20,32 +20,20 @@
 					<div class="box blue darken-4">
 						<span class="white-text color-name"> dark blue</span>
 					</div>
-					<div class="box-details">
-						<p>content of dark blue box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box blue darken-2">
 						<span class="white-text color-name"> noraml blue</span>
-					</div>
-					<div class="box-details">
-						<p>content of normal blue box</p>
 					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box light-blue lighten-2">
 						<span class="white-text color-name"> light blue</span>
 					</div>
-					<div class="box-details">
-						<p>content of light blue box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box light-blue lighten-4">
 						<span class="white-text color-name"> very light blue</span>
-					</div>
-					<div class="box-details">
-						<p>content of very light blue box</p>
 					</div>
 				</div>
 			</div>
@@ -54,32 +42,20 @@
 					<div class="box green darken-4">
 						<span class="white-text color-name"> dark green</span>
 					</div>
-					<div class="box-details">
-						<p>content of dark green box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box green darken-2">
 						<span class="white-text color-name"> normal green</span>
-					</div>
-					<div class="box-details">
-						<p>content of normal green box</p>
 					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box green lighten-2">
 						<span class="white-text color-name"> light green</span>
 					</div>
-					<div class="box-details">
-						<p>content of light green box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box green lighten-4">
 						<span class="white-text color-name"> very light green</span>
-					</div>
-					<div class="box-details">
-						<p>content of very light green box</p>
 					</div>
 				</div>
 			</div>
@@ -88,32 +64,20 @@
 					<div class="box orange darken-4">
 						<span class="white-text color-name"> dark orange</span>
 					</div>
-					<div class="box-details">
-						<p>content of dark orange box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box orange darken-2">
 						<span class="white-text color-name"> normal orange</span>
-					</div>
-					<div class="box-details">
-						<p>content of normal orange box</p>
 					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box orange lighten-2">
 						<span class="white-text color-name"> light orange</span>
 					</div>
-					<div class="box-details">
-						<p>content of light orange box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box orange lighten-4">
 						<span class="white-text color-name"> very light orange</span>
-					</div>
-					<div class="box-details">
-						<p>content of very light orange box</p>
 					</div>
 				</div>
 			</div>
@@ -122,32 +86,20 @@
 					<div class="box purple darken-4">
 						<span class="white-text color-name"> dark purple</span>
 					</div>
-					<div class="box-details">
-						<p>content of dark purple box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box purple darken-2">
 						<span class="white-text color-name"> normal purple</span>
-					</div>
-					<div class="box-details">
-						<p>content of normal purple box</p>
 					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box purple lighten-2">
 						<span class="white-text color-name"> light purple</span>
 					</div>
-					<div class="box-details">
-						<p>content of light purple box</p>
-					</div>
 				</div>
 				<div class=" center relative">
 					<div class="box purple lighten-4">
 						<span class="white-text color-name"> very light purple</span>
-					</div>
-					<div class="box-details">
-						<p>content of very light purple box</p>
 					</div>
 				</div>
 			</div>
@@ -172,6 +124,7 @@
 			for (var i = 0; i < boxes.length;  i++) {
 				var index = i%4;
 				$(boxes[i]).css("left", width *index);
+				$(boxes[i]).css("top", height *Math.floor(i/4));
 				$(boxes[i]).css("top", height *Math.floor(i/4));
 			};
 			$(".box").click(function(e){
