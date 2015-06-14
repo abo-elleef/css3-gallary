@@ -14,9 +14,7 @@
 	</header>
 	<div class="row">
 		<div class="col s10 offset-s1">
-			<div class="row center">
-				<p class="main-text green-text text-darken-4">click on any box</p>
-			</div>
+			<div class="minimize black"><a href="#" class="white-text">close</a></div>
 			<div class="row">
 				<div class=" center relative">
 					<div class="box blue darken-4">
@@ -165,6 +163,7 @@
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$(".minimize").hide();
 			var width = $(window).width()/4;
 			var height = $(window).height()/4;
 			$(".box").css("width", width);
@@ -182,6 +181,19 @@
 					$(that).addClass("expand");
 					// $(that).css("")
 				},200)
+				setTimeout(function(){
+					$(".minimize").show();
+				},1000);
+			});
+			$(".minimize").click(function(e){
+				e.preventDefault();
+				var that = $(".box.expand").removeClass("expand");
+				setTimeout(function(){
+					$(that).removeClass("centerlize");
+				},200)
+				setTimeout(function(){
+					$(".minimize").hide();
+				},0);
 			});
 		});
 	</script>
