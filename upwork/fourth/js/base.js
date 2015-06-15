@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	$("#drop-toggler").click(function(){
 		$("#drop-list").toggle(250);
+		return false;
 	});
-
 	
 });
