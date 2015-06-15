@@ -8,8 +8,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	var updateTableCounters = function(){
-		var table = $(this).parents("table");
+	var updateTableCounters = function(table){
 		var rows = $(table).find("tr");
 		var total = 0;
 		for (var i = 1; i < rows.length; i++) {
@@ -19,6 +18,13 @@ $(document).ready(function(){
 		$(table).find("tr").first().find("th").last().html(total)
 	};
 
-	$(".count").change(updateTableCounters);
+	$(".count").change(function(){
+		var table = $(this).parents("table");
+		updateTableCounters(table);
+	});
+	var tables = $("#tables-part").find("table");
+	for (var i = 0; i < tables.length; i++) {
+		updateTableCounters(tables[i]);
+	};
 	
 });
