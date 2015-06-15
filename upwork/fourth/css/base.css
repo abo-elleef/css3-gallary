@@ -132,7 +132,7 @@ hr{
 #drop-list li a:hover{
 	background-color: #3d1e57;
 }
-}
+
 select{
 	display: inline-block !important;
 	width: 50% !important;
