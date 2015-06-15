@@ -206,7 +206,7 @@ select{
 
 @font-face {
     font-family: flat;
-    src: url(../fonts/JF Flat regular.ttf);
+    src: url("../fonts/JF Flat regular.ttf");
 }
 span,h1,h2,h3,h4,h5,h6,p,button ,a{
     font-family: flat;
