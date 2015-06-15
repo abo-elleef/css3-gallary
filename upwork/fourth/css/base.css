@@ -92,6 +92,12 @@ hr{
 .main-part{
 	padding: 20px;
 }
+.wideRowPart{
+	width: 70%;
+}
+.smallRowPart{
+	width: 30%;
+}
 
 
 /* home */
@@ -171,6 +177,12 @@ select{
 		top: 7px;
 		width: 40px;
 	}
+.count,.count:focus{
+	width: 100%;
+	height: 100%;
+	border:none;
+	text-align: center;
+}
 /* end of page 2*/
 /*page 3*/
 .new-estratigy{
@@ -201,14 +213,5 @@ select{
 
 }
 /* end of page 7*/
-/*
- purble 5a2d82
-*/
 
 
-.wideRowPart{
-	width: 70%;
-}
-.smallRowPart{
-	width: 30%;
-}
