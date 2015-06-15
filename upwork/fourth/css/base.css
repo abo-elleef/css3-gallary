@@ -130,7 +130,7 @@ hr{
 	display: block;
 }
 #drop-list li a:hover,#drop-list li a:focus,#drop-list li a:active{
-	background-color: #359e44;
+	background-color: #3d1e57;
 }
 select{
 	display: inline-block !important;
@@ -204,13 +204,7 @@ select{
  purble 5a2d82
 */
 
-@font-face {
-    font-family: flat;
-    src: url(../fonts/JF Flat regular.ttf);
-}
-span,h1,h2,h3,h4,h5,h6,p,button ,a{
-    font-family: flat;
-}
+
 .wideRowPart{
 	width: 70%;
 }
