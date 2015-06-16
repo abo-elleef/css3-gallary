@@ -184,3 +184,6 @@ label{
 #success-actions{
 	margin-top: 100px;
 }
+#signup-container,#signin-container{
+	overflow: hidden;
+}

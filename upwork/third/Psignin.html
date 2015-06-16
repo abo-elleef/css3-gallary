@@ -9,18 +9,28 @@
 	<script type="text/javascript" src="./js/materialize.js"></script>
 </head>
 <body>
-	<nav class="light-blue lighten-1 hide-on-large-only" role="navigation">
-	  <div class="nav-wrapper "><a id="logo-container" href="#" class="brand-logo header-logo">llamatest</a>
-	    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-	  </div>
-	  <ul id="nav-mobile" class="side-nav">
-	      <li><a href="./index.html">Home</a></li>
-	      <li><a href="./project.html">Project Feed</a></li>
-	      <li><a href="./about.html">About</a></li>
-	      <li><a href="./signin.html">Sign In</a></li>
-	    </ul>
-	</nav>
-	<div class="row">
+	<div id="signin-container" class="row">
+		<div class="col s12 m8 l6 offset-m2 offset-l3">
+      <p id="login-text" class="card center light-blue-text"> Welcome back, Login and get inspired by the crowd </p>
+		</div>
+      <form class="">
+	      <div class="col s6 offset-s3">
+	      	<input type="text" placeholder="Username" class="z-depth-1 light-blue-text" />
+	      	<input type="password" placeholder="Password" class="z-depth-1 light-blue-text" />
+	      </div>
+      	<p class="col s6 offset-s3">
+		      <input type="checkbox" id="remember" />
+		      <label for="remember">Remember me</label>
+		    </p>
+		    <div class="col s6 offset-s3 center">
+		    	<a href="./profile.html" class="btn light-blue lighten-1">Login</a>
+		    </div>
+		    <div class="col s6 offset-s3 center">
+		    	<a id="signin-signup" class="right" href="#"> sign up it is free </a>
+		    </div>
+      </form>
+	</div>
+	<div id="signup-container" class="row">
 		<div class="col s12 m8 l6 offset-m2 offset-l3">
       <p id="login-text" class="card center light-blue-text">Let us get started on your free account and get to testing </p>
 		</div>
@@ -44,17 +54,32 @@
 		      <label for="subscribe">Yes, sign me up for that llamatest newsletter!</label>
 		    </p>
 		    <div class="col s6 offset-s3 center">
-		    	<a href="./createProject.html" class="btn blue">Start</a>
+		    	<a href="./profile.html" class="btn light-blue lighten-1">Start</a>
+		    </div>
+		    <div class="col s6 offset-s3 center">
+		    	<a id="signup-signin" class="right" href="#"> back to login </a>
 		    </div>
       </form>
 	</div>
+	
 
 	
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-  	  $('select').material_select();
-	  });
+	  	  $('select').material_select();
+		 });
+		$("#signup-container").animate({"height":0},0);
+		$("#signin-signup").click(function(){
+			$("#signup-container").animate({"height":600},700);
+			$("#signin-container").animate({"height":0},400);
+			return false;
+		});
+		$("#signup-signin").click(function(){
+			$("#signup-container").animate({"height":0},400);
+			$("#signin-container").animate({"height":400},700);
+			return false;
+		});
 
 	</script>
 </body>
@@ -71,24 +96,3 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>llamatest</title>
-	<link rel="stylesheet" type="text/css" href="./css/materialize.css">
-	<link rel="stylesheet" type="text/css" href="./css/base.css">
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="./js/materialize.js"></script>
-</head>
-<body>
-	
-
-	
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-	    	$('.button-collapse').sideNav();
-		})
-	</script>
-</body>
-</html>
