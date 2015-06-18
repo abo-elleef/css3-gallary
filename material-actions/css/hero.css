@@ -2,6 +2,7 @@
 	height: 100px;
 	position: relative;
 	cursor: pointer;
+	z-index: 10
 }
 .box-details{
 	position: absolute;
@@ -18,10 +19,14 @@
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transition: 0.1s;
+	transition: 0.01s;
 	overflow: hidden;
 	opacity: 0.5;
+	z-index: 0;
 	
+}
+.material-bg.slow{
+	transition: 0.4s !important;
 }
 .main-text{
 	font-size: 24px;
@@ -44,11 +49,16 @@
 	text-transform: capitalize;
 }
 .shown{
-	position: absolute;
 	left: 0px !important;
 	top: 0px !important;
 	height: 100% !important;
 	width: 100% !important;
-	transition:  0.7s;
+	transition:  0.5s;
+	z-index: 11;
 	opacity: 1;
+}
+#close-hero{
+	position: fixed;
+	right: 10px;
+	top: 10px;
 }

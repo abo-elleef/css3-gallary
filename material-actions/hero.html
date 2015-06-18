@@ -164,7 +164,7 @@
 	</div>
 	<div class="material-bg">
 		<div class="controls">
-			<a id="close-hero" class="btn right">close</a>
+			<a id="close-hero" class="btn black white-text">close</a>
 		</div>
 		<div class="details">
 			
@@ -172,25 +172,32 @@
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$("#close-hero").hide();
+			var left;
+			var top;
 			$("#close-hero").click(function(e){
 				$(".details").html("");
 				$(".material-bg").removeClass("shown");
-				$(".material-bg").css("width",0);
-				$(".material-bg").css("height",0);
+				$(this).hide();
 			});
 			$(".box").click(function(e){
-				var left = e.pageX;
-				var top = e.pageY;
-				$(".material-bg").css("left",$(this).offset().left);
-				$(".material-bg").css("top",$(this).offset().top);
-				$(".material-bg").css("width",$(this).width());
-				$(".material-bg").css("height",$(this).height());
+				var left = $(this).offset().left;
+				var top = $(this).offset().top;
+				$(".material-bg").animate({"left":left,
+											"top":top,
+											"width":$(this).width(),
+											"height":$(this).height()
+										},10)
+				$(".material-bg").addClass("slow");
 				$(".material-bg").css("background-color","white");
 				var that = this
 				setTimeout(function(){
 					$(".material-bg").addClass("shown").find(".details").append($(that).find(".box-details").html());
 					$(".material-bg").css("background-color",$(that).css("background-color"));
-				 },100);
+				 },400);
+				setTimeout(function(){
+					$("#close-hero").show();
+				 },700);
 			});
 		});
 	</script>
