@@ -18,9 +18,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./js/base.js"></script>
 
-	<link href="https://rawgithub.com/scottjehl/Respond/master/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-	<link href="respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-	<script src="respond.proxy.js"></script>
+	
+	<script src="./js/respond.js"></script>
 
 	<!-- select 2 -->
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
@@ -81,7 +80,7 @@
 				    <div class="col-sm-5">
 				      <div class="radio">
 							  <label>
-							    <input type="radio" name="optionsRadios" value="option1">
+							    <input id="status" type="radio" name="optionsRadios" value="option1">
 							    	Ativo
 							  </label>
 							</div>
@@ -96,24 +95,24 @@
 					  </div>
 					</div>
 				  <div class="form-group">
-				    <label for="preodutos" class="col-sm-3 control-label">Produtos com desconto %: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="preodutos" class="col-sm-3 control-label">Produtos com desconto %: <button id="preodutos" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-9">
-				    	<span class="col-sm-1 text-center">De</span> <input type="text" class="col-sm-1" /> <span class="col-sm-1 text-center">a</span> <input type="text" class="col-sm-1">
+				    	<span class="col-sm-1 text-center">De</span> <input   type="text" class="col-sm-1" /> <span class="col-sm-1 text-center">a</span> <input type="text" class="col-sm-1">
 			        <label class="col-sm-offset-1">
 			          <input type="checkbox"> Todos
 			        </label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Lançamento: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="lancamento" class="col-sm-3 control-label">Lançamento: <button id="lancamento" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
-			          <input type="checkbox">
+			          <input   type="checkbox">
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Aposta: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="aposta" class="col-sm-3 control-label">Aposta: <button id="aposta" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
-			          <select class="form-control" title="Aposta">
+			          <select   class="form-control" title="Aposta">
 			          	<option>A</option>
 			          	<option>B</option>
 			          	<option>C</option>
@@ -122,9 +121,9 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Cobertura: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="Cobertura" class="col-sm-3 control-label">Cobertura: <button id="Cobertura" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
-			          <select class="form-control" title="Cobertura">
+			          <select   class="form-control" title="Cobertura">
 			          	<option>A</option>
 			          	<option>B</option>
 			          	<option>C</option>
@@ -133,13 +132,13 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Departamento: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="Departamento" class="col-sm-3 control-label">Departamento: <button id="Departamento" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
 			          <label>
-							    <input type="checkbox" value="">
+							    <input   type="checkbox" value="">
 							    selecionar todos departamentos
 							  </label>
-							  <select class="form-control" title="Departamento" multiple>
+							  <select  class="form-control" title="Departamento" multiple>
 							  	<option>Artes Marciais</option>
 							  	<option>Automobilismo</option>
 							  	<option>Aventura</option>
@@ -151,58 +150,58 @@
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="inputPassword3" class="col-sm-3 control-label">Produto: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="Produto" class="col-sm-3 control-label">Produto: <button id="Produto" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
-			          <label>
-							    <input type="checkbox" value="">
-							    selecionar todos produtos
-							  </label>
-							  <select class="form-control" title="Produto" multiple>
-							  	<option>Bermudas</option>
-							  	<option>Bonés</option>
-							  	<option>Calças</option>
-							  	<option>Camisas Polo</option>
-							  	<option>Camisetas</option>
-							  	<option>Colecionávies</option>
-							  </select>
+		          <label>
+						    <input   type="checkbox" value="">
+						    selecionar todos produtos
+						  </label>
+						  <select class="form-control" title="Produto" multiple>
+						  	<option>Bermudas</option>
+						  	<option>Bonés</option>
+						  	<option>Calças</option>
+						  	<option>Camisas Polo</option>
+						  	<option>Camisetas</option>
+						  	<option>Colecionávies</option>
+						  </select>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="marca" class="col-sm-3 control-label">Marca: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="marca" class="col-sm-3 control-label">Marca: <button id="marca" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
 			        <label class="">
-			          <input type="checkbox"> selecionar todas marcas
+			          <input   type="checkbox"> selecionar todas marcas
 			        </label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="Gênero" class="col-sm-3 control-label">Gênero: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="Genero" class="col-sm-3 control-label">Gênero: <button id="Genero" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
 			        <label class="">
-			          <input type="checkbox"> selecionar todos gêneros
+			          <input   type="checkbox"> selecionar todos gêneros
 			        </label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="clube" class="col-sm-3 control-label">Clube: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="clube" class="col-sm-3 control-label">Clube: <button id="clube" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
 			        <label class="">
-			          <input type="checkbox"> selecionar todos clubes
+			          <input   type="checkbox"> selecionar todos clubes
 			        </label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="time" class="col-sm-3 control-label">Time: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="time" class="col-sm-3 control-label">Time: <button id="time" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
 			        <label class="">
-			          <input type="checkbox"> selecionar todos times
+			          <input   type="checkbox"> selecionar todos times
 			        </label>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="Força" class="col-sm-3 control-label">Força: <button class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
+				    <label for="forca" class="col-sm-3 control-label">Força: <button id="forca" class="pop pull-right" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</button></label>
 				    <div class="col-sm-5">
-			          <select class="form-control" title="Força">
+			          <select   class="form-control" title="Força">
 			          	<option>Selecione uma força</option>
 			          	<option>Agressiva Positiva</option>
 			          	<option>Moderada Positiva</option>
