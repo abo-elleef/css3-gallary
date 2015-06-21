@@ -944,6 +944,21 @@ ul.nostyle i {
     font-family: flat;
     src: url(../fonts/JF Flat regular.ttf);
 }
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
     font-family: flat;
+}
+*{
+  
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
 }
