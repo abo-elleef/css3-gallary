@@ -774,7 +774,7 @@ ul.nostyle i {
   color: #fff;
 }
 #get-in-touch {
-  padding: 100px 0 50px;
+  padding-top: 30px;
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -940,6 +940,9 @@ ul.nostyle i {
 .navbar-brand.b2b{
   padding: 0px !important;
 }
+.navbar-brand.b2b img{
+  width: 70px;
+}
 @font-face {
     font-family: flat;
     src: url(../fonts/JF Flat regular.ttf);
@@ -954,11 +957,15 @@ body {
     font-family: flat;
 }
 *{
-  
+
 -webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
 -o-user-select: none;
 user-select: none;
+}
+
+.underline{
+  text-decoration: underline;
 }
