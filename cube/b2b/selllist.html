@@ -24,6 +24,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- select 2 -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    
 </head><!--/head-->
 
 <body id="home" class="homepage" dir="rtl">
@@ -340,11 +344,11 @@
         <div class="form-group">
           <label for="about_company" class="col-sm-3 control-label">نوع التعاقد</label>             
           <div class="col-sm-8">
-            <select>
-              <option> EX-worke </option>
-              <option>C.i.f</option>
-              <option>F.o.B</option>
-            </select>
+              <select class="">
+                <option> EX-worke </option>
+                <option>C.i.f</option>
+                <option>F.o.B</option>
+              </select>
           </div>
         </div>
         <div class="form-group">
@@ -450,8 +454,10 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+           $('select').select2();
             $("#add-sell-promotion").click(function(e){
                 $(this).addClass("centerailize");
                 setTimeout(function(){

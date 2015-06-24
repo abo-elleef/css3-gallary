@@ -128,3 +128,6 @@ body {
 .article-img{
 	margin: 10px;
 }
+select{
+      width: 250px;
+    }
