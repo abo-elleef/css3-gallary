@@ -982,5 +982,8 @@ user-select: none;
   margin: 10px;
 }
 select{
-      width: 250px;
-    }
+  width: 250px;
+}
+a:active,a:focus{
+  outline: none;
+}
