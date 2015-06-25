@@ -19,6 +19,9 @@ html {
  }
 .container{
 	width: 992px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .burble{
 	background-color: #5a2d82 !important;
