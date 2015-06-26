@@ -197,3 +197,15 @@ label{
 #signup-container,#signin-container{
 	overflow: hidden;
 }
+.project-actions{
+	margin-top: -10px;}
+	.project-actions li{
+		display: inline-block;}
+		.project-actions li i{
+			margin: 5px;
+			vertical-align: middle;
+		}
+	.project-actions .readMoreLink{
+		margin-left: 30px;
+		float: right;
+	}
