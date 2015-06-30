@@ -169,6 +169,9 @@ html {
 label.right-spacer{
 	padding-right: 40px !important;
 }
+label.control-label{
+	text-align: right !important; 
+}
 select{
 	display: inline-block !important;
 	width: 50% !important;
