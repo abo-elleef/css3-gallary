@@ -19,7 +19,6 @@ body {
     font-family: flat !important;
 }
 *{
-
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -37,28 +36,26 @@ body {
 	padding: 0px !important;
 }
 .float-action{
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	padding-top: 19px;
-	padding-right: 13px;
-	bottom: 48px;
-	right: 24px;
-	border-radius: 50%;
-	font-size: 60px;
+	padding: 6px 12px;
+	border-radius: 30px;
+	font-size: 40px;
 	background-color: #45aed6;
 	color: white;
 	z-index: 1000;
-	transition:0.2s;
-}
-.float-action:focus,.float-action:hover{
-	color: white;
-}
-.float-action.centerailize{
-	right: 50%;
-	bottom: 50%;
-	transition:0.2s;
-}
+	opacity: 1;
+	transition:0.2s;}
+	.float-action span{
+		font-size: 18px;
+		vertical-align: top;
+		font-weight: bolder;
+	}
+	.float-action:focus,.float-action:hover{
+		color: white;}
+	.float-action.centerailize{
+		opacity: 0;
+		right: 50%;
+		bottom: 50%;
+		transition:0.2s;}
 #order-form{
 	position: fixed;
 	background-color: #f9f9f9;
@@ -133,4 +130,45 @@ select{
 }
 a:active,a:focus{
 	outline: none;
+}
+/* added*/
+.btn-b2b{
+	background-color: #45aed6;
+	color: white;
+	width: 120px;
+	padding: 3px 4px;
+	font-weight: bold;}
+	.btn-b2b:hover,.btn-b2b:focus,.btn-b2b:active{
+		color: white;
+
+	}
+#search{
+	width: 250px;
+	border: 1px solid #eee;
+	padding: 0px 7px;}
+	#search:focus,#search:active{ 
+		outline: none;
+		border: 1px solid #ccc; }
+.price{
+	font-size: 21px;
+	margin-right: 20px;
+	vertical-align: middle;
+	color: 
+}
+@media (max-width: 500px) {
+ 	.add-button {
+ 		float: none; 		
+ 	}
+ 	#search-form{
+ 		margin-top: 30px;
+ 	}
+}
+
+ @media (min-width: 501px) {
+	.add-button {
+		float: left;
+	}
+	#subheader-container{
+		margin-bottom: 20px;
+	}
 }

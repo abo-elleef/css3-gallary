@@ -47,8 +47,8 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class=" "><a href="./home.html">الرئيسية</a></li>
-                        <li class=""><a href="./selllist.html">معروض للبيع</a></li>
-                        <li class=""><a href="./buylist.html">معروض للشراء</a></li>
+                        <li class=""><a href="./selllist.html">معروض للتصدير</a></li>
+                        <li class=""><a href="./buylist.html">معروض للاستيراد</a></li>
                         <li ><a href="./reports.html">تقارير تصديرية</a></li>
                         <li class=""><a href="./home.html#services">خدمات</a></li>
                         <li class=""><a href="./home.html#work-process">عملائنا</a></li>
@@ -137,7 +137,7 @@
             <div class="row">
                 <form class="form-horizontal">
                   <div class="form-group">
-                    <label for="name" class="col-sm-2 control-label">الاسم</label>
+                    <label for="name" class="col-sm-2 control-label">اسم الشركة</label>
                     <div class="col-sm-8">
                       <input id="name" type="text" name="conpany_name" class="form-control" >
                     </div>
@@ -167,7 +167,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="representative" class="col-sm-2 control-label">مسئول الاتصال</label>
+                    <label for="representative" class="col-sm-2 control-label"> اسم مسئول الاتصال</label>
                     <div class="col-sm-8">
                       <input id="representative" type="text" name="conpany_representative" class="form-control">
                     </div>
@@ -187,13 +187,33 @@
                   <div class="form-group">
                     <label for="profile" class="col-sm-2 control-label">HS code</label>
                     <div class="col-sm-8">
-                      <input id="profile" type="file" name="conpany_profile" class="form-control">
+                      <select id="code">
+                        <option> 01 Live animals </option>
+                        <option> 0101 Live horses, asses, mules and hinnies. </option>
+                        <option> 010110 Pure-bred breeding horses and asses </option>
+                        <option> 010190 Live horses, asses, mules and hinnies (excl. pure-bred for breeding) </option>
+                        <option> 0102 Live bovine animals. </option>
+                        <option> 010210 Pure-bred breeding bovines </option>
+                        <option> 010290 Live bovine animals (excl. pure-bred for breeding) </option>
+                        <option> 0103 Live swine </option>
+                      </select>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="representative" class="col-sm-2 control-label"> السعر </label>
                     <div class="col-sm-8">
                       <input id="representative" type="text" name="conpany_representative" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="representative" class="col-sm-2 control-label"> طريقة الدفع </label>
+                    <div class="col-sm-8">
+                      <select>
+                        <option>اعتماد مستندى</option>
+                        <option>خطاب ضمان</option>
+                        <option>كاش</option>
+                        <option>تحويل بنكى</option>
+                      </select>
                     </div>
                   </div>
                   <div class="form-group">
