@@ -153,7 +153,7 @@ a:active,a:focus{
 	font-size: 21px;
 	margin-right: 20px;
 	vertical-align: middle;
-	color: 
+	color: #45aed6;
 }
 @media (max-width: 500px) {
  	.add-button {
