@@ -33,10 +33,15 @@ var getPrev = function(){
 var drawThumbs = function(pathes){
 	if(pathes.length < 2){
 		$("#thumbs").css("height",0);
+		$(".direction-action").hide();
 	};
 };
 var slide = function(that){
 	$(".img-container").find("img").attr("src",$(that).find("img").attr("src"));
+	$(".title").text($(that).attr("data-title"));
+	$(".desc").text($(that).attr("data-desc"));
+	$(".thumb").removeClass("active");
+	$(that).addClass("active");
 };
 var forword = function(){
 	var next = getNext();
@@ -52,7 +57,7 @@ var backword = function(){
 	slide(prev);
 };
 $.fn.extend({
-	"msatSlider": function(){
+	"hasoup": function(){
 		var pathes = [];
 		var thumbs = $(this).find(".thumb");
 		console.log(typeof(thumbs));
@@ -61,16 +66,23 @@ $.fn.extend({
 		};
 		drawThumbs(pathes);
 		$(".thumb").click(function(){slide(this)});
+		slide(getFirstThumb());
 	}
 });
 $("document").ready(function(){
-  $("#thumbs").msatSlider();
+  $("#thumbs").hasoup();
 	$(".slide").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      alert(direction);
-      if(direction == "right"){forword();}
-      if(direction == "left"){backword();}
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData){
+      if(direction == "right"){forword();return ;}
+      if(direction == "left"){backword();return ;}
     }
+  });
+  $("#right").click(function(){
+  	backword();
+  	return false;
+  });
+  $("#left").click(function(){
+  	forword();
+  	return false;
   });
 });
