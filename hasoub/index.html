@@ -13,6 +13,8 @@
 <body>
   <div id="callary-container" dir="rtl">
     <ul id="slides">
+      <a id="right" class="direction-action" href="#!"><img src="./right.png"></a>
+      <a id="left" class="direction-action" href="#!"><img src="./left.png"></a>
       <li class="slide">
         <div class="img-container">
           <img class="responsive-image" src="" />
@@ -24,8 +26,6 @@
       </li>
     </ul>
     <div id="thumbs-container">
-      <a id="right" class="direction-action" href="#!"><img src="./right.png"></a>
-      <a id="left" class="direction-action" href="#!"><img src="./left.png"></a>
       <ul id="thumbs">
         <li class="thumb" data-title=" slide 1 " data-desc="some text to describe the slide 1 what it is about"><img class="responsive-image" src="./1.jpg"></li>
         <li class="thumb" data-title=" slide 2 " data-desc="some text to describe the slide 2 what it is about"><img class="responsive-image" src="./2.jpg"></li>
@@ -38,12 +38,10 @@
       </ul>
     </div>
   </div>
+  <script type="text/javascript">
+    $("document").ready(function(){
+      $("#thumbs").hasoup();
+    });
+    </script>
 </body>
 </html>
-
-<!--
-    to do list
-    <ul>
-      <li>add arrows for forward and backword actions</li>
-    </ul>
--->

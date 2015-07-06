@@ -15,8 +15,11 @@ a:active,a:focus{
 }
 .slide{
   max-height: 400px;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
+}
+.img-container img{
+  transition: 0.5s;
 }
 .cap-container{
   position: absolute;
@@ -28,6 +31,11 @@ a:active,a:focus{
   padding: 6px  12px 0px;
   box-sizing:border-box;
   background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition:0.5s;
+}
+#slides:hover .cap-container{
+  opacity: 1
 }
 .responsive-image{
   max-width: 100%;}
@@ -57,14 +65,20 @@ a:active,a:focus{
 }
 .thumb{
   display: inline-block;
+  border: 3px solid transparent;
 }
 .thumb img{
   width: 100px;
-  height: 70px;
+  max-height: 70px;
+  vertical-align: middle;
+}
+.thumb.active{
+  border: 3px solid #fab71a;
 }
 .direction-action{
   position: absolute;
   top: 40%;
+  z-index: 10;
 }
 #right{
   right: -30px;

@@ -67,22 +67,19 @@ $.fn.extend({
 		drawThumbs(pathes);
 		$(".thumb").click(function(){slide(this)});
 		slide(getFirstThumb());
-	}
-});
-$("document").ready(function(){
-  $("#thumbs").hasoup();
-	$(".slide").swipe( {
+		$("#right").click(function(){
+	  	backword();
+	  	return false;
+	  });
+	  $("#left").click(function(){
+	  	forword();
+	  	return false;
+	  });
+	  $(".slide").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData){
       if(direction == "right"){forword();return ;}
       if(direction == "left"){backword();return ;}
     }
   });
-  $("#right").click(function(){
-  	backword();
-  	return false;
-  });
-  $("#left").click(function(){
-  	forword();
-  	return false;
-  });
+	}
 });
