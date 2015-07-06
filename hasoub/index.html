@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <script type="text/javascript" src="./jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="./jquery.touchSwipe.min.js"></script>
   <script type="text/javascript" src="./base.js"></script>
 
 
@@ -22,16 +23,18 @@
         </div>
       </li>
     </ul>
-    <ul id="thumbs">
-      <li class="thumb"><img class="responsive-image" src="./1.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./2.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./3.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./4.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./1.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./2.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./3.jpg"></li>
-      <li class="thumb"><img class="responsive-image" src="./4.jpg"></li>
-    </ul>
+    <div id="thumbs-container">
+      <ul id="thumbs">
+        <li class="thumb"><img class="responsive-image" src="./1.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./2.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./3.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./4.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./1.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./2.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./3.jpg"></li>
+        <li class="thumb"><img class="responsive-image" src="./4.jpg"></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
@@ -39,6 +42,7 @@
 <!--
     to do list
     <ul>
-      <li>search for better photos for the five main photos</li>
+      <li>add arrows for forward and backword actions</li>
+      <li> add touchswipe plugin for capture touch events </li>
     </ul>
 -->

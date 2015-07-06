@@ -64,5 +64,13 @@ $.fn.extend({
 	}
 });
 $("document").ready(function(){
-  $("#thumbs").msatSlider()
+  $("#thumbs").msatSlider();
+	$(".slide").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      alert(direction);
+      if(direction == "right"){forword();}
+      if(direction == "left"){backword();}
+    }
+  });
 });
