@@ -91,7 +91,7 @@ a:active,a:focus{
     width: 90%;
   }
 }
-@media (max-width: 860px) {
+@media (max-width: 860px) and (min-width: 501px) {
   #callary-container {
     width: 80%;
   }
