@@ -86,3 +86,13 @@ a:active,a:focus{
 #left{
   left: -30px;
 }
+@media (max-width: 500px) {
+  #callary-container {
+    width: 90%;
+  }
+}
+@media (max-width: 860px) {
+  #callary-container {
+    width: 80%;
+  }
+}
