@@ -71,20 +71,69 @@
             </div>
             <div class="row">
                 <a id="add-buy-promotion" href="#" class="float-action add-button"> + <span class="">اضف عرض </span></a>
+                <div id= "searchOptions" class="dropdown pull-right">
+                  <a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="caret"></span>
+                    بحث
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a id="productSearch" href="#!" data-toggle="modal" data-target="#myModal">بحث بالمنتجات</a></li>
+                    <li><a id="countrySearch" href="#!" data-toggle="modal" data-target="#myModal2">بحث بالدول</a></li>
+                  </ul>
+                </div>
             </div>
-            <div id="subheader-container" class="row text-center">
-              <form id="search-form" class="">
-                <input id="search" type="text" placeholder="بحث ..."/>
-                <select class="wide">
-                  <option>جميع الدول</option>
-                  <option>مصر</option>
-                  <option>السعودية</option>
-                  <option>الكويت</option>
-                  <option>البحرين</option>
-                  <option>الجزائر</option>
-                </select>
-                <button class="btn btn-b2b">بحث</button>
-              </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">بحث</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div id="subheader-container" class="row text-center">
+                        <form id="search-form" class="">
+                          <input id="search" type="text" placeholder="ابحث باسم المنتج"/>
+                          <select class="wide">
+                            <option>جميع الدول</option>
+                            <option>مصر</option>
+                            <option>السعودية</option>
+                            <option>الكويت</option>
+                            <option>البحرين</option>
+                            <option>الجزائر</option>
+                          </select>
+                          <button class="btn btn-b2b">بحث</button>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">بحث</h4>
+                  </div>
+                  <div class="modal-body">
+                      <div id="subheader-container" class="row text-center">
+                        <form id="search-form" class="">
+                          <select class="wide">
+                            <option>جميع الدول</option>
+                            <option>مصر</option>
+                            <option>السعودية</option>
+                            <option>الكويت</option>
+                            <option>البحرين</option>
+                            <option>الجزائر</option>
+                          </select>
+                          <button class="btn btn-b2b">بحث</button>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
              <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -529,6 +578,12 @@
                 $("#add-buy-promotion").removeClass("centerailize")
               },300);
               return false;
+            });
+            $("#productSearch").click(function(){
+                alert("show products");
+            });
+            $("#countrySearch").click(function(){
+                alert("show countries");
             });
         });
     </script>
