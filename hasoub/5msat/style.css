@@ -9,7 +9,7 @@ ul{
   direction: rtl;
 }
 .ajs-content{
-  padding: 10px 0px 20px !important;
+  padding: 10px 0px 25px !important;
 }
 .element-container{
   width: 49%;
@@ -26,18 +26,27 @@ ul{
 
 label .required{
   color: red;
+  font-size: 14px;
 }
-.input-container input{
+.input-container input,.input-container input:focus{
   margin-top: 5px;
   height: 30px;
-  border: 1px solid #ccc;
   width: 90%;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: none;
+  font-size: 16px;
 }
 .input-container select{
   margin-top: 5px;
   height: 30px;
   width: 40%;
   margin-right: 3%;
+  border: 1px solid #CCC;
+  border-radius: 4px;
 }
 
 @media only screen and (max-width: 640px) {

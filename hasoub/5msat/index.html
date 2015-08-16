@@ -65,9 +65,11 @@
                                     buttons:[
                                         {
                                             text: 'شحن الرضيد',
+                                            className: "button",
                                         },
                                         {
                                             text: 'تراجع',
+                                            className: "button",
                                         }
                                     ],
                                     options: {
@@ -79,7 +81,12 @@
                                 };
                          },
                       build:function(){
-                      }
+                      },
+                      callback:function(e){
+                        if(e.index == 0){
+                          alert("do the charge process");
+                        }
+                     }
                   };
               },true,'alert');
           }
