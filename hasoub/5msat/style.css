@@ -1,0 +1,47 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+ul{
+  list-style-type: none;}
+.ajs-dialog{
+  direction: rtl;
+}
+.ajs-content{
+  padding: 10px 0px 20px !important;
+}
+.element-container{
+  width: 49%;
+  pull:right;
+  display: inline-block;
+  margin-top: 15px;
+}
+.ajs-header{
+  border-bottom: 1px solid #ccc;
+}
+.ajs-footer{
+  border-top: 1px solid #ccc;
+}
+
+label .required{
+  color: red;
+}
+.input-container input{
+  margin-top: 5px;
+  height: 30px;
+  border: 1px solid #ccc;
+  width: 90%;
+}
+.input-container select{
+  margin-top: 5px;
+  height: 30px;
+  width: 40%;
+  margin-right: 3%;
+}
+
+@media only screen and (max-width: 640px) {
+  .element-container{
+    width: 100%;
+  }
+}
